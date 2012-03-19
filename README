@@ -1,0 +1,14 @@
+<h1>jQuery Plugin: Ninjabox: README</h1>
+
+This is a very simple plugin. Based off jQuery. The default options are width, height, source and media type. These can be extended.
+
+Width: media width
+Height: media height
+Source: specifies the url for the video or path to the image
+Media type: image or video
+
+Styling of the lightbox is done with CSS. 
+
+The effect is called on an element like an anchor tag and triggered by an onclick event.
+
+There is only one method "hide()" within the plugin. Can be called: "$.fn.ninjaBox.hide();"
