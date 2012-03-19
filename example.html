@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AC's Simple Lightbox Plugin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href='styles.css?v=20120318' rel='stylesheet' type='text/css' media='all' />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="ninjaBox" class="overlay">
+      <div class="inner_box"> 
+        <a href="#" id="close" class="close-button" onclick="$.fn.ninjaBox.hide();">close</a>  
+        <div class="inner_content"></div>
+      </div>
+    </div>
+    
+    <a href="#" class="triggers" id="imageloader">&nbsp;</a>
+    <a href="#" class="triggers" id="videoloader">&nbsp;</a>
+    
+    <script>
+      jQuery(document).ready(function() {
+        $('#imageloader').ninjaBox({
+          mediaType: 'image', 
+  				height: 400, 
+  				width: 600,
+  				src: 'images/chair.jpg'
+        });
+        $('#videoloader').ninjaBox({
+          mediaType: 'video', 
+  				height: 360, 
+  				width: 480,
+  				src: 'http://www.youtube.com/embed/FVEuRqVFJ5w'
+        });
+      });
+
+    </script>
+    
+  </body>
+</html>
