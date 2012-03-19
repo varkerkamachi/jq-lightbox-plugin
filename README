@@ -1,4 +1,4 @@
-<h1>jQuery Plugin: Ninjabox: README</h1>
+jQuery Plugin: Ninjabox: README
 
 This is a very simple plugin. Based off jQuery. The default options are width, height, source and media type. These can be extended.
 
